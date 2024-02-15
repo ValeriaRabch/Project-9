@@ -21,6 +21,11 @@ struct Boiler   //3
 	int power, amount, temperature;
 };
 
+struct Animal   //4
+{
+	char animal[20], clas[20], name[20];
+};
+
 void PrintWashingMachine(WashingMachine machine) {  //1	
 	cout << "Firma -" << machine.firma << endl;
 	cout << "Color -" << machine.color << endl;	
@@ -47,6 +52,20 @@ void PrintBoiler(Boiler boiler) {  //3
 	cout << "Amount -" << boiler.amount << endl;
 }
 
+void Fulling(Animal& creature, int& n) {    //4
+	cout << "Select\n1.Cat\n2.Pig\n3.Dog\n4.Cow" << endl;	
+	cin >> creature.animal;
+	if (strcmp(creature.animal, "Cat") != 0 && strcmp(creature.animal, "Pig") != 0 && strcmp(creature.animal, "Dog") != 0 && strcmp(creature.animal, "Cow") != 0) {
+		n++;
+		cout << "Error";		
+		return;
+	}	
+	cout << "Enter class -"; 
+	cin >> creature.clas;
+	cout << "Enter name -"; 
+	cin >> creature.name;
+}
+
 int main() 
 {
 	//завдання 1
@@ -64,11 +83,11 @@ int main()
 	PrintIron(iron);*/
 
 	//завдання 3
-	Boiler boiler; 
+	/*Boiler boiler; 
 	cout << "Enter \n 1.Firma \n2.Color\n3.Power\n4.Temperature\n5.Amount" << endl;
 	cin >> boiler.firma >> boiler.color >> boiler.power;
 	cin >> boiler.temperature >> boiler.amount;
-	PrintBoiler(boiler);
+	PrintBoiler(boiler);*/
 
 	return 0;
 }
