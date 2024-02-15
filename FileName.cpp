@@ -63,5 +63,12 @@ int main()
 	cin >> iron.min_temperature >> iron.max_temperature >> iron.power >> iron.steam; 
 	PrintIron(iron);*/
 
+	//завдання 3
+	Boiler boiler; 
+	cout << "Enter \n 1.Firma \n2.Color\n3.Power\n4.Temperature\n5.Amount" << endl;
+	cin >> boiler.firma >> boiler.color >> boiler.power;
+	cin >> boiler.temperature >> boiler.amount;
+	PrintBoiler(boiler);
+
 	return 0;
 }
