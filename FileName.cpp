@@ -76,6 +76,24 @@ void Print(Animal creature, int n) {  //4
 	cout << "Name -" << creature.name << endl;
 }
 
+void Voice(Animal creature) {  //4	
+	if (strcmp(creature.animal, "Cat")==0) {
+	cout << "Meow meow";
+	}
+	else if (strcmp(creature.animal, "Pig") == 0) {
+		cout << "Hush hush";
+	}
+	else if (strcmp(creature.animal, "Dog") == 0) {
+		cout << "Woof woof";
+	}
+	else if (strcmp(creature.animal, "Cow") == 0) {
+		cout << "Moo moo";
+	}
+	else {
+		cout << "Erorr";
+	}
+}
+
 int main() 
 {
 	//завдання 1
