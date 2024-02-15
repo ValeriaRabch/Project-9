@@ -15,6 +15,12 @@ struct Iron     //2
 	bool steam; 
 };
 
+struct Boiler   //3
+{
+	char firma[20], color[10];
+	int power, amount, temperature;
+};
+
 void PrintWashingMachine(WashingMachine machine) {  //1	
 	cout << "Firma -" << machine.firma << endl;
 	cout << "Color -" << machine.color << endl;	
@@ -33,6 +39,14 @@ void PrintIron(Iron iron) {  //2
 	cout << "Steam -" << iron.steam << endl;
 }
 
+void PrintBoiler(Boiler boiler) {  //3	
+	cout << "Firma -" << boiler.firma << endl;
+	cout << "Color -" << boiler.color << endl;
+	cout << "Power -" << boiler.power << endl;
+	cout << "Temperature -" << boiler.temperature << endl;	
+	cout << "Amount -" << boiler.amount << endl;
+}
+
 int main() 
 {
 	//завдання 1
@@ -43,10 +57,11 @@ int main()
 	PrintWashingMachine(machine);*/
 
 	//завдання 2
-	Iron iron;
+	/*Iron iron;
 	cout << "Enter \n 1.Firma \n2.Color\n3.Model\n4.Min_temperature\n5.Max_temperature\n6.Steam" << endl;
 	cin >> iron.firma >> iron.color >> iron.model;
 	cin >> iron.min_temperature >> iron.max_temperature >> iron.power >> iron.steam; 
-	PrintIron(iron);
+	PrintIron(iron);*/
+
 	return 0;
 }
