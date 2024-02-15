@@ -117,5 +117,11 @@ int main()
 	cin >> boiler.temperature >> boiler.amount;
 	PrintBoiler(boiler);*/
 
+	//завдання 4
+	Animal creature; int n = 0; 
+	Fulling(creature, n);
+	Print(creature, n);
+	Voice(creature);
+
 	return 0;
 }
