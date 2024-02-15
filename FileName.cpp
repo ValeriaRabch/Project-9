@@ -42,6 +42,11 @@ int main()
 	cin >> machine.width >> machine.height >> machine.power >> machine.temperature;
 	PrintWashingMachine(machine);*/
 
-
+	//завдання 2
+	Iron iron;
+	cout << "Enter \n 1.Firma \n2.Color\n3.Model\n4.Min_temperature\n5.Max_temperature\n6.Steam" << endl;
+	cin >> iron.firma >> iron.color >> iron.model;
+	cin >> iron.min_temperature >> iron.max_temperature >> iron.power >> iron.steam; 
+	PrintIron(iron);
 	return 0;
 }
