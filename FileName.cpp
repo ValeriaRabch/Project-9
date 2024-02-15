@@ -118,10 +118,10 @@ int main()
 	PrintBoiler(boiler);*/
 
 	//завдання 4
-	Animal creature; int n = 0; 
+	/*Animal creature; int n = 0; 
 	Fulling(creature, n);
 	Print(creature, n);
-	Voice(creature);
+	Voice(creature);*/
 
 	return 0;
 }
