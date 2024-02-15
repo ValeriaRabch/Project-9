@@ -66,6 +66,16 @@ void Fulling(Animal& creature, int& n) {    //4
 	cin >> creature.name;
 }
 
+void Print(Animal creature, int n) {  //4	
+	if (n != 0) {
+	cout << "Error";		
+	return;
+	}	
+	cout << "Animal -" << creature.animal << endl;
+	cout << "Class -" << creature.clas << endl;	
+	cout << "Name -" << creature.name << endl;
+}
+
 int main() 
 {
 	//завдання 1
