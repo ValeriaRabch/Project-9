@@ -19,6 +19,11 @@ void PrintWashingMachine(WashingMachine machine) {  //1
 
 int main() 
 {
-	
+	//завдання 1
+	WashingMachine machine;
+	cout << "Enter \n 1.Firma \n2.Color\n3.Widht\n4.Height\n5.Power\n6.Temperature" << endl;
+	cin >> machine.firma >> machine.color;
+	cin >> machine.width >> machine.height >> machine.power >> machine.temperature;
+	PrintWashingMachine(machine);
 	return 0;
 }
